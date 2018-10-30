@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<script src="js/app.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myCtrl">
+		<div class="container">
+			<div class="jumbotron">			
+				<h1>Jumblies</h1>
+			</div>
+				<div >
+				<input type="text" ng-model="sentence" class="form-control col-md-8" placeholder="Real">
+				<br>	
+				<input type="text" ng-model="fake" class="form-control col-md-2" placeholder="Fake">
+				<br>
+				<div class="sub btn btn-info" ng-click="funk('sentence', 'fake')">submit</div>
+				<div class="btn btn-info">test</div>
+				<div class="btn btn-info">another</div>
+			</div>
+			<div >
+				<div ng-repeat="item in senny">
+    				<div ng-repeat="a in item[0] track by $index">
+      				<div class="wordoption" style="float:left; padding-right:10px; margin-top:5px; font-size:18px;" ng-click="clickfunc(a, item[1])">{{a}}</div></div><br /><br />
+    			</div>
+  			</div>
+  			{{score}}
+			</div>
+		</div>
+		<script>
+
+	</script>
+		</div>
+	</body>
+	
+</html>
